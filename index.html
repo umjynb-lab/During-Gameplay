@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How NPC Decision-Making Systems Choose Actions During Gameplay</title>
+  <meta name="google-site-verification" content="cBY17xBLG3GvD4jL7HzlTyKYWSnqvDEu5ZuoEMg7f0Y" />
 <meta name="description" content="Learn how NPCs evaluate available actions, assess game-state information, assign priorities, and select responses during gameplay.">
 <link rel="canonical" href=""><script>document.querySelector('link[rel="canonical"]').href=window.location.href;</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How NPC Decision-Making Systems Choose Actions During Gameplay","publisher":{"@type":"Organization","name":"we9999.net.pk"}}</script>
@@ -59,7 +60,10 @@ footer{background:#111;color:#555;text-align:center;padding:22px;font-size:.85re
 </ul>
 <h2>Decision Frequency</h2>
 <p>NPCs do not re-evaluate every possible action every frame. Most systems update on a timer — every few tenths of a second — or when a significant event occurs. This reduces computational overhead and gives NPC behaviour a natural persistence rather than flicking between actions too rapidly. The update frequency can vary by the NPC's importance to the current scene: an actively engaged enemy might update more often than a background crowd character.</p>
+<p>Once an NPC evaluates its options and selects an action, the game needs a reliable way to manage what happens next. <a href="https://umjynb.codeberg.page/MachinesControl/">Finite state machines</a> provide a structured approach by defining behavioral states and the conditions that trigger transitions between them.</p>
+
 </main>
+  
 <footer>© 2026</footer>
 </body>
 </html>
